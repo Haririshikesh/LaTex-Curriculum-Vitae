@@ -1,0 +1,315 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Rishikesh K} \\[7.5pt]
+\href{https://linkedin.com/in/rishikesh-k-508202240}{\raisebox{-0.05\height}\faLinkedin\ Rishikesh K} \ $|$ \ 
+\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ haririshikeshk2003@gmail.com} \ $|$ \ \href{https://leetcode.com/RishikeshKesavan/}{\raisebox{-0.05\height}\faCode\ Leetcode}\ $|$ \ \href{https://github.com/Haririshikesh}{\raisebox{-0.05\height}\faGithub\ github}\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Career Objective}
+I'm eager to land in a challenging job.So I may broaden my knowledge, skills and learning more than that I have bagged in my past years and apply it to boost your company and aid to reach its highest peak.
+%
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+{\bf Bachelor of Technology in Information Technology} \hfill {May 2020 - May 2024}
+\\ 
+M.Kumarasamy college of Engineering, Karur.
+\\
+CGPA : 8.29/10 (Upto 5th Semester)
+
+{\textbf{HSC, Class XII}}  \hfill March 2020 \\
+SKV Matriculation Higher Sec School,Karur, 74.83\% 
+
+{\textbf{SSLC, Class X}}  \hfill March  2018\\
+Vetri Vikaas Boys Higher Sec School,Salem, 86.4\% 
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+%----------
+%Projects
+\section{Area of Interest}
+\begin{itemize}
+    \item Web Development
+    \item Augmented reality And Virtual reality
+\end{itemize}
+
+
+
+\section{Skills}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\multicolumn{2}{@{}X@{}}
+{
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+{\textbf{Technical Skills}: Java,Python,HTML,CSS,JavaScript,ReactJs,Firebase,Tex,MongoDB.} & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+}
+\end{tabularx}
+
+\item{\textbf{Software Skills: }Unity,Blender,Adobe Lightroom,Overleaf.} 
+}
+\end{tabularx}
+
+%Experience----------------------------------------------------------------------------------------------------------------------------------------------------
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Kids Learning Management System} & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Ripened a kids friendly educational game in Augmented Reality.
+        \item[--] Interacts with the user through an immense gaming environment.
+        \item[--] Hybrid domain combined of {\bf Unity game development }and {\bf Augmented Reality}.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Mall Of America} & \hfill\\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Developed a system to manage the room details and management of mall shop details.
+        \item[--] This system is developed for monitoring purpose for shop owners.
+        \item[--] Crossbred domain combined of {\bf Java }and {\bf SQL }.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Hyperlinked Resume with Better User Interface} & \hfill\\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] This Project is divided into five sections.
+        \item[--] It is connected through hyperlinking and redirecting Actions.
+        \item[--] An elegant resume with better interface using mixed platform of {\bf HTML} and{\bf CSS}.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Certification
+%----------------------------------------------------------------------------------------
+\section{Academic Achievements \& Certifications}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Obtained the Certification for Partaking as a team of 3 in the Grand finale of the OCPARVR 2.0 2023 held in \textbf{IIT Bhubaneshwar}.
+        \item Attained the certification for Participating in the regional pre-finals of the ICT Academy \textbf{Youth talk 2022}.
+        \item Gained the Google Cloud Computing Foundations course certification.
+        
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+
+%	ACHIEVEMENT
+
+
+
+%	Languages Known
+%----------------------------------------------------------------------------------------
+
+%	Languages Known
+%-------------------------------------------------------------------------------
+%	SW SKILLS
+%---------------------------------------------------------------------------------------
+%	Xtra act
+%----------------------------------------------------------------------------------------
+\section{Co-Curricular Activities \& Extra Curricular Activities}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Bestowed with the Shield for defending the \textbf{First price} of Republic Day March Past Parade 2023.
+        \item Delivered a speech at a \textbf{state level Tamil speech} contest "MUTHAMIZH MANDRAM" to about 2000 people.
+        \item Bagged \textbf{5 stars} in Python certification through hackerrank platform.
+        \item Rewarded for securing first place in the Toast Master's Club.
+        \item Engaged as an Event Co-ordinator for the Department events such as Talentina, Chakrawar 2022, Crackathon 1.0.
+    \end{itemize}
+    \end{minipage}
+}
+\item[  ]
+\end{tabularx}
+
+\section{Personal Details}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\multicolumn{2}{@{}X@{}}
+{
+{
+%\item{\textbf{Father's Name : }Kesavan S} 
+%\item[  ]
+%\item[  ]
+\textbf{D.O.B : }09-05-2003}
+\item[  ]
+\item{\textbf{Languages Known: }Tamil,English,Japanese.(Trilingual).} 
+\item[  ]
+\item{\textbf{Address : }Salem, Tamilnadu } 
+\item[  ]
+
+}
+\end{tabularx}
+
+\item[   ]
+\item[   ]
+
+\item[   ]
+\item[   ]
+\item[   ]
+\item[   ]
+\item[   ]
+\item[   ]
+\item[   ]
+\item[   ]
+
+
+
+%	DEc
+%----------------------------------------------------------------------------------------
+\section{Declaration}
+Hereby, I Declare that all the Information given above is true to the best of my knowledge and belief.
+\\
+\item[  ]
+\item[  ]
+{\textbf{Date   :}}  \hfill  \\
+
+{\textbf{Place :}    Salem}  \hfill (Rishikesh K )\\
+\vfill
+
+\end{document}
+
+\let\cleardoublepage\clearemptydoublepage
